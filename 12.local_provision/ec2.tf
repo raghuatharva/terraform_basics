@@ -3,11 +3,11 @@ resource "aws_instance" "first_ec2" {
   instance_type          = "t2.micro"
   vpc_security_group_ids = [aws_security_group.allow_22.id]
   tags = {
-    Name = "first-ec2"
+    Name = "first-ec11"
   }
   #sometimes it wont work due to the internal behaviour of terraform; god knowss why
   provisioner "local-exec" {
-    command = "echo ${self.private_ip} > tt.txt"
+    command = "echo ${self.id} > tt.txt" 
   }
 }
 
