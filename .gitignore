@@ -4,9 +4,7 @@
 # .terraform.lock.hcl file (optional, commit this only if version locking is necessary)
 .terraform.lock.hcl
 
-# Sensitive variable files
-*.tfvars
-*.tfvars.json
+
 
 # Terraform state files
 terraform.tfstate
