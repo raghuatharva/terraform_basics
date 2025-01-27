@@ -8,7 +8,7 @@ resource "aws_instance" "first_ec2" {
 }
 
 resource "aws_security_group" "allow_22" {
-  name        = "allow_ssh"
+  name        = "allow_sh"
   description = " allow port 22 for ssh access"
 
   #usually we allow everything in egress==> outbound rules
