@@ -13,6 +13,7 @@ resource "null_resource" "xy" { # we are not using any server here, my pc is con
     type        = "ssh"
     user  = "ec2-user"
     password = "DevOps321"
+    # private_key = file("~/.ssh/id_rsa") # password authentification will not work in aws , only works with joindevops ami
     host        = "98.81.240.42"
   
 }
